@@ -23,10 +23,10 @@
             android:key="@string/expand_menu_key_long_press_key"
             android:summary="@string/expand_menu_key_long_press_summary"
             android:title="@string/expand_menu_key_long_press_title" />
-        <CheckBoxPreference
+        <!-- <CheckBoxPreference
             android:key="@string/expand_recents_key_long_press_key"
             android:summary="@string/expand_recents_key_long_press_summary"
-            android:title="@string/expand_recents_key_long_press_title" />
+            android:title="@string/expand_recents_key_long_press_title" /> -->
         <CheckBoxPreference
             android:key="@string/expand_search_key_long_press_key"
             android:summary="@string/expand_search_key_long_press_summary"

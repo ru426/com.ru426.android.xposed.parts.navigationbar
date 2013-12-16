@@ -281,15 +281,16 @@ public class NavigationBarModule extends ModuleBase {
 							isPerformLongClick = false;
 							return true;							
 						}
-						if(isExpandEnableRecents){
-							int recent_apps = mKeyButtonView.getContext().getResources().getIdentifier("recent_apps", "id",  mKeyButtonView.getContext().getPackageName());
-							if(mKeyButtonView.getId() == recent_apps){
-				            	XposedHelpers.setObjectField(param.thisObject, "mSupportsLongpress", true);
-				            	XposedHelpers.callMethod(param.thisObject, "setPressed", false);
-								isPerformLongClick = false;
-								return true;							
-							}
-						}
+						
+//						if(isExpandEnableRecents){
+//							int recent_apps = mKeyButtonView.getContext().getResources().getIdentifier("recent_apps", "id",  mKeyButtonView.getContext().getPackageName());
+//							if(mKeyButtonView.getId() == recent_apps){								
+//				            	XposedHelpers.setObjectField(param.thisObject, "mSupportsLongpress", true);
+//				            	XposedHelpers.callMethod(param.thisObject, "setPressed", false);
+//								isPerformLongClick = false;
+//								return true;							
+//							}
+//						}
 						isPerformLongClick = false;
 					}
 					XposedBridge.invokeOriginalMethod(param.method, param.thisObject, param.args);
@@ -563,7 +564,7 @@ public class NavigationBarModule extends ModuleBase {
         	for(int i = 0; i < group.getChildCount(); i++){
         		int thisId = group.getChildAt(i).getId();
         		mXLinkedList.add(new XNavButtonInfo(XUtil.getKeyById(mContext, thisId), group.getChildAt(i), i, true));
-        	}        	
+        	}
         	//set other key button      
             id = mContext.getResources().getIdentifier("search", "id",  mContext.getPackageName());
             if(id <= 0 || group.findViewById(id) == null){
@@ -576,8 +577,8 @@ public class NavigationBarModule extends ModuleBase {
             id = mContext.getResources().getIdentifier("optional", "id",  mContext.getPackageName());
             if(id <= 0 || group.findViewById(id) == null){
             	View optionalView = XUtil.makeCustomKeyButtonView(mContext, R.layout.xkeybuttonview_optional);
-                optionalView.setOnClickListener(mOnClickListener);
-                optionalView.setOnLongClickListener(mOnLongClickListener);
+                optionalView.setOnClickListener(optionalOnClickListener);
+                optionalView.setOnLongClickListener(optionalOnLongClickListener);
             	mXLinkedList.add(new XNavButtonInfo("Optional", optionalView, mXLinkedList.size(), false));
             }            
             id = mContext.getResources().getIdentifier("menu2", "id",  mContext.getPackageName());
@@ -596,11 +597,6 @@ public class NavigationBarModule extends ModuleBase {
             if(id <= 0 || group.findViewById(id) == null){
             	mXLinkedList.add(new XNavButtonInfo("Spacer2", XUtil.makeCustomKeyButtonView(mContext, R.layout.xkeybuttonview_spacer2), mXLinkedList.size(), false));
             }
-            
-            if(getCustomKeyButton("RecentApps") != null){
-        		View recentsView = getCustomKeyButton("RecentApps");
-                recentsView.setOnLongClickListener(mOnLongClickListener);
-        	}
         }
 
         group.removeAllViews();
@@ -657,32 +653,24 @@ public class NavigationBarModule extends ModuleBase {
 		}
 	}
 	
-	private static OnLongClickListener mOnLongClickListener =  new OnLongClickListener() {							
+	private static OnLongClickListener optionalOnLongClickListener =  new OnLongClickListener() {							
 		@Override
 		public boolean onLongClick(View v) {
-			if(v.getId() == R.id.optional){
-				Intent intent = new Intent(XUtil.OPTIONAL_BUTTON_LONG_CLICKED);
-				v.getContext().sendBroadcast(intent);	
-				isPerformLongClick = true;
-				return true;
-			}
-			int recent_apps = mContext.getResources().getIdentifier("recent_apps", "id",  mContext.getPackageName());
-			if(v.getId() == recent_apps){
-				XModUtil.expandStatusBar(mContext);
-				return true;
-			}
-			return false;
+			Intent intent = new Intent(XUtil.OPTIONAL_BUTTON_LONG_CLICKED);
+			v.getContext().sendBroadcast(intent);	
+			isPerformLongClick = true;
+			return true;
 		}
 	};
 	
-	private static OnClickListener mOnClickListener = new OnClickListener() {		
+	private static OnClickListener optionalOnClickListener = new OnClickListener() {		
 		@Override
 		public void onClick(View v) {
 			if(!isPerformLongClick){
 				Intent intent = new Intent(XUtil.OPTIONAL_BUTTON_CLICKED);
 				v.getContext().sendBroadcast(intent);
         	}
-			isPerformLongClick = false;
+			isPerformLongClick = false;			
 		}
 	};
 	
