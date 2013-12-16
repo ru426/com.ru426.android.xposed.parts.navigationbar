@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ナビゲーションバー</string>
+    <string name="app_desc">ナビゲーションバーのレイアウト変更・その他</string>
+    
+    <string name="navigationbar_settings_title">ナビゲーションバー</string>
+    <string name="navigationbar_settings_summary">ナビゲーションバー 設定</string>
+    
+    <string name="is_hook_navigationbar_key">IsHookNavigationBarKey</string>
+    <string name="is_hook_navigationbar_title">ナビゲーションバー拡張</string>
+    <string name="is_hook_navigationbar_summary">ナビゲーションバーを拡張する</string>
+    
+    <string name="settings_navigationbar_key_option_key">SettingsNavigationbarKeyOptionKey</string>
+    <string name="settings_navigationbar_key_option_title">ナビゲーションバー キー オプション</string>
+    <string name="settings_navigationbar_key_option_summary">ナビゲーションバー キー オプション 設定</string>
+    
+    <string name="settings_custom_navigationbar_key">SettingsCustomNavigationbarKey</string>
+    <string name="settings_custom_navigationbar_title">カスタムナビゲーションバー</string>
+    <string name="settings_custom_navigationbar_summary">カスタムナビゲーションバー 設定</string>
+    
+    <string name="menu_key_always_visible_key">MenuKeyAlwaysVisibleKey</string>
+    <string name="menu_key_always_visible_title">メニューキー常時表示</string>
+    <string name="menu_key_always_visible_summary">メニューキーを常に表示状態にする</string>
+    
+    <string name="expand_menu_key_long_press_key">ExpandMenuKeyLongPressKey</string>
+    <string name="expand_menu_key_long_press_title">メニューボタン 長押し</string>
+    <string name="expand_menu_key_long_press_summary">メニューボタン 長押しで通知バーを降ろす</string>
+    
+    <string name="expand_recents_key_long_press_key">ExpandRecentsKeyLongPressKey</string>
+    <string name="expand_recents_key_long_press_title">アプリ履歴ボタン 長押し</string>
+    <string name="expand_recents_key_long_press_summary">アプリ履歴ボタン 長押しで通知バーを降ろす</string>
+    
+    <string name="expand_search_key_long_press_key">ExpandSearchKeyLongPressKey</string>
+    <string name="expand_search_key_long_press_title">検索ボタン 長押し</string>
+    <string name="expand_search_key_long_press_summary">検索ボタン 長押しで通知バーを降ろす</string>
+    
+    <string name="use_mod_navigationbar_view_key">UseModNavigationbarViewKey</string>
+    <string name="use_mod_navigationbar_view_title">カスタムナビゲーションバー</string>
+    <string name="use_mod_navigationbar_view_summary">カスタムナビゲーションバー配置を使う</string>
+    
+    <!-- NavigationSettings -->
+    <string name="keybuttonview_align_portrait_key">NavBarKeyButtonPortraitAlignKey</string>
+    <string name="keybuttonview_align_portrait_title">ナビバーボタン配置(縦)</string>
+    <string name="keybuttonview_align_portrait_summary">端末縦向き時のナビバーボタン配置 設定</string>
+    
+    <string name="keybuttonview_align_landscape_key">NavBarKeyButtonLandscapeAlignKey</string>
+    <string name="keybuttonview_align_landscape_title">ナビバーボタン配置(横)</string>
+    <string name="keybuttonview_align_landscape_summary">端末横向き時のナビバーボタン配置 設定</string>
+    
+    <string name="cant_save_message">キー設定を保存できませんでした</string>
+    <string name="cant_disable_message">%1$s キーは無効にできません</string>
+    <string name="saved">保存しました</string>
+    
+    <!-- OptionalButton -->
+    <string name="keybuttonview_optional_key">OptionalKeySettingsKey</string>
+    <string name="keybuttonview_optional_title">オプショナルボタン 設定</string>
+    <string name="keybuttonview_optional_summary">オプショナルボタン設定を変更する</string>
+    
+    <string name="optional_clicked">OPTIONALボタンクリック時</string>
+    <string name="optional_long_clicked">OPTIONAボタンロングクリック時</string>
+    <string name="launch_mode">起動モード</string>
+    <string name="select">選択アプリ</string>
+    <string name="previous">直前のアプリ</string>
+    <string name="select_message">アプリを選択するにはここをタップ</string>
+    <string name="loading_application_list">アプリリストを読込中</string>
+    <string name="select_app_to_launch">起動アプリを選択してください</string>
+    
+    <!-- Other -->
+    <string name="change_nav_setting_caution">まずレイアウト設定の変更を行ってください</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="XKeyButtonView">
+        <attr name="keyCode" format="integer" />
+        <attr name="keyRepeat" format="boolean" />
+        <attr name="glowBackground" format="reference" />
+    </declare-styleable>
+
+</resources>

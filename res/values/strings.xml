@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Navigation Bar</string>
+    <string name="app_desc">Change Navigation Bar layout and more</string>
+    
+    <string name="navigationbar_settings_title">Navigation Bar</string>
+    <string name="navigationbar_settings_summary">Navigation Bar Settings</string>
+    
+    <string name="is_hook_navigationbar_key">IsHookNavigationBarKey</string>
+    <string name="is_hook_navigationbar_title">Mod NavigationBar</string>
+    <string name="is_hook_navigationbar_summary">Use mod navigationbar</string>
+    
+    <string name="settings_navigationbar_key_option_key">SettingsNavigationbarKeyOptionKey</string>
+    <string name="settings_navigationbar_key_option_title">Navigationbar Key Option</string>
+    <string name="settings_navigationbar_key_option_summary">Navigationbar Key Option Settings</string>
+    
+    <string name="settings_custom_navigationbar_key">SettingsCustomNavigationbarKey</string>
+    <string name="settings_custom_navigationbar_title">Custom Navigationbar</string>
+    <string name="settings_custom_navigationbar_summary">Custom Navigationbar Settings</string>
+    
+    <string name="menu_key_always_visible_key">MenuKeyAlwaysVisibleKey</string>
+    <string name="menu_key_always_visible_title">Menu key always visible</string>
+    <string name="menu_key_always_visible_summary">Keeps the menu key always visible</string>
+    
+    <string name="expand_menu_key_long_press_key">ExpandMenuKeyLongPressKey</string>
+    <string name="expand_menu_key_long_press_title">MenuKey long press</string>
+    <string name="expand_menu_key_long_press_summary">Expand notification bar when MenuKey long pressed</string>
+    
+    <string name="expand_recents_key_long_press_key">ExpandRecentsKeyLongPressKey</string>
+    <string name="expand_recents_key_long_press_title">RecentKey long press</string>
+    <string name="expand_recents_key_long_press_summary">Expand notification bar when RecentKey long pressed</string>
+    
+    <string name="expand_search_key_long_press_key">ExpandSearchKeyLongPressKey</string>
+    <string name="expand_search_key_long_press_title">SearchKey long press</string>
+    <string name="expand_search_key_long_press_summary">Expand notification bar when SearchKey long pressed</string>
+    
+    <string name="use_mod_navigationbar_view_key">UseModNavigationbarViewKey</string>
+    <string name="use_mod_navigationbar_view_title">Mod Navigationbar align</string>
+    <string name="use_mod_navigationbar_view_summary">Use mod navigationbar align</string>
+    
+    <!-- NavigationSettings -->
+    <string name="keybuttonview_align_portrait_key">NavBarKeyButtonPortraitAlignKey</string>
+    <string name="keybuttonview_align_portrait_title">NavBar KeyButton portrait align</string>
+    <string name="keybuttonview_align_portrait_summary">NavBar KeyButton portrait align Settings</string>
+    
+    <string name="keybuttonview_align_landscape_key">NavBarKeyButtonLandscapeAlignKey</string>
+    <string name="keybuttonview_align_landscape_title">NavBar KeyButton landscape align</string>
+    <string name="keybuttonview_align_landscape_summary">NavBar KeyButton landscape align Settings</string>
+    
+    <string name="cant_save_message">"can't save key settings"</string>
+    <string name="cant_disable_message">You cannot disable %1$s key</string>
+    <string name="saved">saved</string>
+    
+    <!-- OptionalButton -->
+    <string name="keybuttonview_optional_key">OptionalKeySettingsKey</string>
+    <string name="keybuttonview_optional_title">OptionalKey Settings</string>
+    <string name="keybuttonview_optional_summary">OptionalKey Settings</string>
+    
+    <string name="optional_clicked">OPTIONAL_BUTTON_CLICKED</string>
+    <string name="optional_long_clicked">OPTIONAL_BUTTON_LONG_CLICKED</string>
+    <string name="launch_mode">Launch mode</string>
+    <string name="select">Select</string>
+    <string name="previous">Previous</string>
+    <string name="select_message">Tap here to select an app</string>
+    <string name="loading_application_list">Loading application list</string>
+    <string name="select_app_to_launch">Select App to launch</string>
+    
+    <!-- Other -->
+    <string name="change_nav_setting_caution">Please change the layout setting first</string>
+    
+</resources>

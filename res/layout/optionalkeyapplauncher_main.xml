@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:padding="16dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/clicked_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/optional_clicked" />
+    <Switch android:id="@+id/switch1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:textOn="@string/select" android:textOff="@string/previous" android:text="@string/launch_mode" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/current_app_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:contentDescription="@string/app_name" android:id="@+id/app_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout2" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/package_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/unset_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/select_message" />
+    <TextView android:id="@+id/clicked_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/optional_long_clicked" />
+    <Switch android:id="@+id/switch2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:textOn="@string/select" android:textOff="@string/previous" android:text="@string/launch_mode" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/current_app_container2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:contentDescription="@string/app_name" android:id="@+id/app_icon2" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout3" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:id="@+id/app_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/package_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/unset_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/select_message" />
+</LinearLayout>

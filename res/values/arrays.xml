@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navbar_settings_spinner_value_list">
+        <item name="xsmall">small</item>
+        <item name="xmedium">medium</item>
+        <item name="xlarge">large</item>
+    </string-array>
+
+</resources>

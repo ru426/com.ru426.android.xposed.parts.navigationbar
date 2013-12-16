@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.ru426.android.xposed.parts.navigationbar"
+    xmlns:xSeekBarPreferece="http://schemas.android.com/apk/res/com.ru426.android.xposed.parts.navigationbar" >
+
+    <PreferenceCategory
+        android:summary="@string/navigationbar_settings_summary"
+        android:title="@string/navigationbar_settings_title" >
+        <CheckBoxPreference
+            android:key="@string/is_hook_navigationbar_key"
+            android:summary="@string/is_hook_navigationbar_summary"
+            android:title="@string/is_hook_navigationbar_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/settings_navigationbar_key_option_key"
+        android:summary="@string/settings_navigationbar_key_option_summary"
+        android:title="@string/settings_navigationbar_key_option_title" >
+        <CheckBoxPreference
+            android:key="@string/menu_key_always_visible_key"
+            android:summary="@string/menu_key_always_visible_summary"
+            android:title="@string/menu_key_always_visible_title" />
+        <CheckBoxPreference
+            android:key="@string/expand_menu_key_long_press_key"
+            android:summary="@string/expand_menu_key_long_press_summary"
+            android:title="@string/expand_menu_key_long_press_title" />
+        <CheckBoxPreference
+            android:key="@string/expand_recents_key_long_press_key"
+            android:summary="@string/expand_recents_key_long_press_summary"
+            android:title="@string/expand_recents_key_long_press_title" />
+        <CheckBoxPreference
+            android:key="@string/expand_search_key_long_press_key"
+            android:summary="@string/expand_search_key_long_press_summary"
+            android:title="@string/expand_search_key_long_press_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/settings_custom_navigationbar_key"
+        android:summary="@string/settings_custom_navigationbar_summary"
+        android:title="@string/settings_custom_navigationbar_title" >
+        <CheckBoxPreference
+            android:key="@string/use_mod_navigationbar_view_key"
+            android:summary="@string/use_mod_navigationbar_view_summary"
+            android:title="@string/use_mod_navigationbar_view_title" />
+
+        <PreferenceScreen
+            android:key="@string/keybuttonview_align_portrait_key"
+            android:summary="@string/keybuttonview_align_portrait_summary"
+            android:title="@string/keybuttonview_align_portrait_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="net.virifi.android.navigationbarsettings.NavigationBarKeySettingPortrait"
+                android:targetPackage="com.ru426.android.xposed.parts.navigationbar" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="@string/keybuttonview_align_landscape_key"
+            android:summary="@string/keybuttonview_align_landscape_summary"
+            android:title="@string/keybuttonview_align_landscape_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="net.virifi.android.navigationbarsettings.NavigationBarKeySettingLandscape"
+                android:targetPackage="com.ru426.android.xposed.parts.navigationbar" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="@string/keybuttonview_optional_key"
+            android:summary="@string/keybuttonview_optional_summary"
+            android:title="@string/keybuttonview_optional_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="net.virifi.android.optionalkeyapplauncher.OptionalKeyAppLauncherActivity"
+                android:targetPackage="com.ru426.android.xposed.parts.navigationbar" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
